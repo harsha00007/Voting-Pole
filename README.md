@@ -15,3 +15,8 @@ python manage.py makemigrations
 python manage.py migrate
 
 python manage.py runserver
+
+
+-->         Laying the pipeline | Python Django Tutorials In Hindi #7
+
+    isme humne urls.py file endpoints wala kuch dekha tha
