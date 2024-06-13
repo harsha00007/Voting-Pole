@@ -1,4 +1,10 @@
+# Set Python as the primary language
 *.py linguist-language=Python
 
+# Exclude documentation files from language statistics
 docs/* linguist-documentation
 *.md linguist-documentation
+*.txt linguist-documentation
+
+# Treat Jupyter notebooks as Python
+*.ipynb linguist-language=Python
