@@ -1,7 +1,7 @@
 <h1> Voting Pole App </h1>
 
 <h3> create virtual environmet</h3>
-virtualenv vote-env
+<section>virtualenv vote-env </section>
 
 Activate the virtual environment
 source vote-env/bin/activate
