@@ -1,22 +1,20 @@
 <h1> Voting Pole App </h1>
 
-<h3> create virtual environmet</h3>
-#virtualenv vote-env
+-->         Create virtual environment
 
-Activate the virtual environment
-source vote-env/bin/activate
+    virtualenv vote-nv
 
-Download the requirements
-pip3 install -r filename.txt
+-->         Activae virtual environment
 
-Run commands
-python manage.py makemigrations
+    source vote-nv/bin/activate
 
-python manage.py migrate
+-->         Download the requirements
 
-python manage.py runserver
+    pip install -r requirement.txt
 
+-->         Run commands
 
--->         Laying the pipeline | Python Django Tutorials In Hindi #7
+    python manage.py makemigrations
+    python manage.py migrate
+    python manage.py runserver
 
-    isme humne urls.py file endpoints wala kuch dekha tha
