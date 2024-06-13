@@ -12,9 +12,15 @@
 
     pip install -r requirement.txt
 
+-->         Create super user 
+            It is officer login ID
+
+    python manage.py createsuperuser
+
 -->         Run commands
 
     python manage.py makemigrations
     python manage.py migrate
     python manage.py runserver
+
 
