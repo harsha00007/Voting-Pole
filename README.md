@@ -29,10 +29,6 @@
 
 ![Screenshot 2024-06-13 143715](https://github.com/harsha00007/Voting-Pole-App/assets/135260913/f7eaa513-2530-4784-8ba5-2a9a40130bd7)
 
-![Screenshot 2024-06-13 143738](https://github.com/harsha00007/Voting-Pole-App/assets/135260913/980c1c93-471e-4ed6-a825-7f7d72cc8370)
-
-
-
-
+![Screenshot 2024-06-13 144751](https://github.com/harsha00007/Voting-Pole-App/assets/135260913/d0a62263-c1f2-473e-9652-8b7bba20f123)
 
 
