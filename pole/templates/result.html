@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Voting Results</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 20px;
+        }
+        table {
+            margin: 0 auto;
+            border-collapse: collapse;
+            width: 50%;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+        }
+        th {
+            background-color: #007bff;
+        }
+        .highlight {
+            font-weight: bold;
+        }
+        .button-secondary {
+            padding: 10px;
+            font-size: 16px;
+            color: white;
+            background-color: #007bff;
+            border: none;
+            border-radius: 4px;
+            text-decoration: none;
+            text-align: center;
+            display: inline-block;
+            margin-top: 10px;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Voting Results</h1>
+    {% if results %}
+        <h2>Winner Of This Election</h2>
+        <table>
+            <tr>
+                <th>Candidate</th>
+                <th>Party</th>
+                <th>Vote Count</th>
+            </tr>
+            <tr class="highlight">
+                <td>{{ results.0.candidate.candidate_name }}</td>
+                <td>{{ results.0.candidate_party }}</td>
+                <td>{{ results.0.vote_count }}</td>
+            </tr>
+        </table>
+        <h2>Other Candidates</h2>
+        <table>
+            <tr>
+                <th>Candidate</th>
+                <th>Party</th>
+                <th>Vote Count</th>
+            </tr>
+            {% for result in results|slice:"1:" %}
+            <tr>
+                <td>{{ result.candidate.candidate_name }}</td>
+                <td>{{ result.candidate_party }}</td>
+                <td>{{ result.vote_count }}</td>
+            </tr>
+            {% endfor %}
+        </table>
+    {% else %}
+        <p>No results available.</p>
+    {% endif %}
+    <a href="{% url 'officer_dashboard' %}" class="button-secondary">Back to Officer Dashboard</a>
+</body>
+</html>
