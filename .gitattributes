@@ -1,0 +1,4 @@
+*.py linguist-language=Python
+
+docs/* linguist-documentation
+*.md linguist-documentation
